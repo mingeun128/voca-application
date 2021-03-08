@@ -13,6 +13,9 @@
 > 4. 원하는 단어장 속 단어를 원어민 발음으로 들으며 반복학습
 > - 추후 추가 예정
 
+## 기획서
+> https://docs.google.com/presentation/d/10gwjKjXhG7B7Genayx2daFe9h2uddQL1IceIbJfQ8MU/edit?usp=sharing
+
 ## Author
 - 김민근
   - Git: mingeun128
