@@ -36,7 +36,7 @@
         android:layout_height="300dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="TEST!!! THIS IS DICTIONARY"></TextView>
+        android:text="TEST!!! THIS IS MU YA~ HO~"></TextView>
     <Button
         android:id="@+id/add_my_note"
         android:layout_width="wrap_content"

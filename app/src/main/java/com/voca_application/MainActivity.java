@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.voca_application.dictionary.DictionaryFragment;
-import com.voca_application.voca_exam.VocaExamFragment;
+import com.voca_application.voca_test.VocaTestFragment;
 import com.voca_application.voca_note.VocaNoteFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button VocaExamButton;
     DictionaryFragment Dictionary;
     VocaNoteFragment VocaNote;
-    VocaExamFragment VocaExam;
+    VocaTestFragment VocaExam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         Dictionary = new DictionaryFragment();
         VocaNote = new VocaNoteFragment();
-        VocaExam = new VocaExamFragment();
+        VocaExam = new VocaTestFragment();
 
         fragmentManager = getSupportFragmentManager();
         transaction = fragmentManager.beginTransaction();
