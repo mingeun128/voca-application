@@ -4,46 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <EditText
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="30dp"
-            android:layout_weight="9"
-            android:hint="찾을 단어 입력"></EditText>
-        <ImageView
-            android:id="@+id/find_words_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:src="@drawable/arrow_right_white"
-            android:background="@color/voca_blueblack"
-            ></ImageView>
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/words_description"
+            android:layout_gravity="center_horizontal"
+            android:text="모든 단어 시험"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="475dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:text="TEST!!!  THIS IS VOCA NOTE"></TextView>
-    <Button
-        android:id="@+id/add_my_note"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="단어장에 추가"
-        android:background="@color/voca_blueblack"
-        android:backgroundTint="@color/voca_blueblack"></Button>
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="취약 단어 시험"></TextView>
+    </RelativeLayout>
 
 </LinearLayout>
