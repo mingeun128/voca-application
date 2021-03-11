@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -17,15 +18,17 @@ public class MainActivity extends AppCompatActivity {
     private FrameLayout DictionaryLayout;
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
-    Button DictionaryButton;
-    Button VocaNoteButton;
-    Button VocaExamButton;
-    DictionaryFragment Dictionary;
-    VocaNoteFragment VocaNote;
-    VocaTestFragment VocaExam;
+    private Button DictionaryButton;
+    private Button VocaNoteButton;
+    private Button VocaExamButton;
+    private DictionaryFragment Dictionary;
+    private VocaNoteFragment VocaNote;
+    private VocaTestFragment VocaExam;
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG,"onCreate()");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -47,9 +50,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void buttonHandler(){
+        Log.d(TAG,"buttonHandler() IS CALLED !!");
         DictionaryButton.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG,"DICTIONARY BUTTON IS CLICKED!!");
                 transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.fragment_layout, Dictionary);
                 transaction.commit();
@@ -59,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         VocaNoteButton.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d(TAG,"VOCA NOTE BUTTON IS CLICKED!!");
                 transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.fragment_layout, VocaNote);
                 transaction.commit();
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         VocaExamButton.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d(TAG,"VOCA TEST BUTTON IS CLICKED!!");
                 transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.fragment_layout, VocaExam);
                 transaction.commit();

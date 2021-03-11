@@ -18,7 +18,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -30,8 +30,9 @@
             android:background="@color/voca_blueblack"
             android:backgroundTint="@color/voca_blueblack"
             android:text="단어장"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnVocaExam"
             ></Button>
 
         <Button
@@ -41,7 +42,8 @@
             android:background="@color/voca_blueblack"
             android:backgroundTint="@color/voca_blueblack"
             android:text="시험"
-            app:layout_constraintStart_toEndOf="@+id/btnVocaNote"
+            app:layout_constraintLeft_toRightOf="@+id/btnVocaNote"
+            app:layout_constraintRight_toLeftOf="@+id/btnDict"
             app:layout_constraintTop_toTopOf="parent"
             ></Button>
 
@@ -52,9 +54,10 @@
             android:background="@color/voca_blueblack"
             android:backgroundTint="@color/voca_blueblack"
             android:text="사전"
-            app:layout_constraintStart_toEndOf="@+id/btnVocaExam"
+            app:layout_constraintLeft_toRightOf="@+id/btnVocaExam"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            ></Button>
+            app:layout_constraintHorizontal_chainStyle="spread"></Button>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
