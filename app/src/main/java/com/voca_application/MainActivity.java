@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout, Dictionary);
+        transaction.replace(R.id.fragment_layout, Dictionary);
         transaction.commit();
 
         DictionaryButton = findViewById(R.id.btnDict);
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.frameLayout, Dictionary);
+                transaction.replace(R.id.fragment_layout, Dictionary);
                 transaction.commit();
             }
         });
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.frameLayout, VocaNote);
+                transaction.replace(R.id.fragment_layout, VocaNote);
                 transaction.commit();
             }
         });
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.frameLayout, VocaExam);
+                transaction.replace(R.id.fragment_layout, VocaExam);
                 transaction.commit();
             }
         });

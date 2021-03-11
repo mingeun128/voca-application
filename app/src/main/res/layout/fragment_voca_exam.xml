@@ -8,16 +8,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/all_words_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="모든 단어 시험"
-            android:autoSizeTextType="uniform"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></TextView>
+    <TextView
+        android:id="@+id/all_words_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모든 단어 시험"
+        android:textSize="30dp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <TextView
         android:id="@+id/weak_words_test"
@@ -25,8 +26,10 @@
         android:layout_height="wrap_content"
         android:autoSizeTextType="uniform"
         android:text="취약 단어 시험"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/all_words_test"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/all_words_test"
+        android:layout_marginTop="20dp"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

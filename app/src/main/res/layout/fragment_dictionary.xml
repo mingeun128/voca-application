@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,43 +7,53 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_layout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp">
         <EditText
+            android:id="@+id/edit_text"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="30dp"
-            android:layout_weight="9"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.89"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:hint="찾을 단어 입력"></EditText>
         <ImageView
             android:id="@+id/find_words_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edit_text"
             android:src="@drawable/arrow_right_white"
             android:background="@color/voca_blueblack"
             ></ImageView>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/words_description"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@+id/search_layout"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
         android:text="TEST!!! THIS IS MU YA~ HO~"></TextView>
     <Button
         android:id="@+id/add_my_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:text="단어장에 추가"
         android:background="@color/voca_blueblack"
-        android:backgroundTint="@color/voca_blueblack"></Button>
+        android:backgroundTint="@color/voca_blueblack"
+        app:layout_constraintTop_toBottomOf="@+id/words_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"></Button>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
