@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class VocaNoteFragment extends Fragment {
+public class VocaNoteFragment extends Fragment implements VocaNoteContract.View{
     private static final String TAG = VocaNoteFragment.class.getSimpleName();
     @Nullable
     @Override
