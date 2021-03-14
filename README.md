@@ -16,6 +16,12 @@
 ## 기획서
 > https://docs.google.com/presentation/d/10gwjKjXhG7B7Genayx2daFe9h2uddQL1IceIbJfQ8MU/edit?usp=sharing
 
+## Branch 설명
+> master - confirm된 버전
+> develop - 디자인 패턴 없이 만든 버전
+> mvp - MVP 패턴을 적용하여 만든 버전
+> (최종 수정 21.03.15) 
+
 ## Author
 - 김민근
   - Git: mingeun128
