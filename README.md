@@ -18,8 +18,11 @@
 
 ## Branch 설명
 > master - confirm된 버전
+
 > develop - 디자인 패턴 없이 만든 버전
+
 > mvp - MVP 패턴을 적용하여 만든 버전
+
 > (최종 수정 21.03.15) 
 
 ## Author
