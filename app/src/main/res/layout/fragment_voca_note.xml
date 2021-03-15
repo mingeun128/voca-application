@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ListView
+                android:id="@+id/voca_note_listview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </ListView>
